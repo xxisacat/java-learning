@@ -7,10 +7,12 @@ public class Test {
         s1.age = 18;
         s1.grade = "大四";
         s1.study();
+        s1.introduce();
         Teacher t1 = new Teacher();
         t1.name = "morning";
         t1.age = 22;
         t1.subject = "physics";
         t1.teaching();
+        t1.introduce();
     }
 }
