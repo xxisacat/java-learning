@@ -20,6 +20,6 @@ public class Undergraduate extends Person {
     }
 
     public void learn() {
-        System.out.println(this.getName() + " is learning for a bachelor's degree ");
+        System.out.println(this.getName() + " is learning for a bachelor's degree");
     }
 }
