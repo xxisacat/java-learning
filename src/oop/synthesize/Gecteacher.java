@@ -9,6 +9,6 @@ public class Gecteacher extends Person {
     }
 
     public void teach() {
-        System.out.println(this.getName() + " is teaching general education course ");
+        System.out.println(this.getName() + " is teaching general education course");
     }
 }

@@ -25,6 +25,6 @@ public class Postgraduate extends Person {
     }
 
     public void learn() {
-        System.out.println(this.getName() + " is learning for a master's degree ");
+        System.out.println(this.getName() + " is learning for a master's degree");
     }
 }

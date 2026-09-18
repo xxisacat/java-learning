@@ -39,7 +39,7 @@ public class Employ {
     }
 
     public void work() {
-        System.out.println("Employ is working");
+        System.out.println(this.name + " is working");
     }
 
     public void eat() {
