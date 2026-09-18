@@ -22,10 +22,14 @@ src/
 ├── HelloWorld.java          第一个程序
 └── oop/                     面向对象练习
     ├── phone/               继承入门：手机迭代
-    ├── classroom/           继承：人 / 学生 / 老师
+    ├── differentclassroom/  继承 + 封装：人 / 学生 / 老师
     ├── instrument/          继承 + 方法重写
-    └── calculateprice/      继承综合：智能设备价格计算
+    ├── calculateprice/      继承综合：智能设备价格计算
+    ├── restaurantemploy/    继承：员工 / 厨师 / 经理（构造器链 + work 重写）
+    └── synthesize/          继承综合：学生 / 教师四种角色
 ```
+
+> 进度：继承（`super` 构造器链、方法重写）已完成，多态待学。
 
 每个包都是**亲手敲的**，跟着教程敲的不算。
 
