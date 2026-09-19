@@ -39,7 +39,7 @@ public class Rectangle extends Graph {
     }
 
     @Override
-    public void describe() {
-        System.out.println("This rectangle's length is " + length + " and width is " + width);
+    public String describe() {
+        return "This rectangle's length is " + length + " and width is " + width;
     }
 }

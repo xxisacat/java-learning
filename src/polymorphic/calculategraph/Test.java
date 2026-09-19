@@ -5,8 +5,8 @@ public class Test {
         Graph circle = new Circle(7);
         Graph rectangle = new Rectangle(6, 8);
         Student stu = new Student("Iris", 21);
-        circle.describe();
-        rectangle.describe();
+        System.out.println(circle.describe());
+        System.out.println(rectangle.describe());
         stu.learnGraph(circle);
         stu.learnGraph(rectangle);
     }

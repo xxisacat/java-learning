@@ -1,18 +1,14 @@
 package polymorphic.calculategraph;
 
 public class Circle extends Graph {
-    static final double PI = 3.14;
+    private static final double PI = 3.14;
     private double r;
 
     public Circle() {
     }
 
-    public Circle(int r) {
+    public Circle(double r) {
         this.r = r;
-    }
-
-    public double getPI() {
-        return PI;
     }
 
     public double getR() {
@@ -34,7 +30,7 @@ public class Circle extends Graph {
     }
 
     @Override
-    public void describe() {
-        System.out.println("This circle's r is " + r);
+    public String describe() {
+        return "This circle's r is " + r;
     }
 }

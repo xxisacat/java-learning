@@ -8,5 +8,5 @@ public abstract class Graph {
 
     public abstract double getArea();
 
-    public abstract void describe();
+    public abstract String describe();
 }
