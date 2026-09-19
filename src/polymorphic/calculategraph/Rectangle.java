@@ -16,7 +16,7 @@ public class Rectangle extends Graph {
         return length;
     }
 
-    public void setLength(int length) {
+    public void setLength(double length) {
         this.length = length;
     }
 
@@ -24,7 +24,7 @@ public class Rectangle extends Graph {
         return width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 
@@ -36,5 +36,10 @@ public class Rectangle extends Graph {
     @Override
     public double getArea() {
         return length * width;
+    }
+
+    @Override
+    public void describe() {
+        System.out.println("This rectangle's length is " + length + " and width is " + width);
     }
 }
