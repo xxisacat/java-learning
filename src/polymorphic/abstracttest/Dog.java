@@ -4,7 +4,7 @@ public class Dog extends Animal {
     public Dog() {
     }
 
-    public Dog(String name, int color) {
+    public Dog(String name, String color) {
         super(name, color);
     }
 

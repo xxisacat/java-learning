@@ -4,8 +4,8 @@ public class Cat extends Animal {
     public Cat() {
     }
 
-    public Cat(int age, String color, String something) {
-        super(age, color, something);
+    public Cat(int age, String color) {
+        super(age, color);
     }
 
     @Override

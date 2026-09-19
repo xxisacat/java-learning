@@ -9,6 +9,6 @@ public class Car extends Vehicle {
     }
 
     public void honk() {
-        System.out.println(super.getBrand() + " is honking");
+        System.out.println(getBrand() + " is honking");
     }
 }

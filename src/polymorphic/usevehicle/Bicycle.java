@@ -9,6 +9,6 @@ public class Bicycle extends Vehicle {
     }
 
     public void ringBell() {
-        System.out.println(super.getBrand() + " is ringing the bell");
+        System.out.println(getBrand() + " is ringing the bell");
     }
 }

@@ -4,8 +4,8 @@ public class Dog extends Animal {
     public Dog() {
     }
 
-    public Dog(int age, String color, String something) {
-        super(age, color, something);
+    public Dog(int age, String color) {
+        super(age, color);
     }
 
     @Override

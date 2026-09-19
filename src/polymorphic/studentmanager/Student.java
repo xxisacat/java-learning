@@ -10,6 +10,6 @@ public class Student extends Person {
 
     @Override
     public void work() {
-        System.out.println(super.getName() + "'s job is studying");
+        System.out.println(getName() + "'s job is studying");
     }
 }

@@ -10,6 +10,6 @@ public class Admin extends Person {
 
     @Override
     public void work() {
-        System.out.println(super.getName() + "'s job is managing WEB");
+        System.out.println(getName() + "'s job is managing WEB");
     }
 }
