@@ -28,7 +28,7 @@ public class Animal {
         this.color = color;
     }
 
-    public void eat(String something) {
-        System.out.println("Animal is eating " + something + ".");
+    public void eat(String food) {
+        System.out.println("Animal is eating " + food + ".");
     }
 }
