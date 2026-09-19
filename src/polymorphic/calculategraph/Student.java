@@ -29,18 +29,6 @@ public class Student {
     }
 
     public void learnGraph(Graph graph) {
-        if (graph instanceof Circle) {
-            System.out.println(this.name + " is learning about a circle.");
-            System.out.println("The radius of the circle is " + ((Circle) graph).getR() + ".");
-            System.out.println("The perimeter of the circle is " + ((Circle) graph).getPerimeter() + ".");
-            System.out.println("The area of the circle is " + ((Circle) graph).getArea() + ".");
-        }
-        if (graph instanceof Rectangle) {
-            System.out.println(this.name + " is learning about a rectangle.");
-            System.out.println("The length of the rectangle is " + ((Rectangle) graph).getLength() + ".");
-            System.out.println("The width of the rectangle is " + ((Rectangle) graph).getWidth() + ".");
-            System.out.println("The perimeter of the rectangle is " + ((Rectangle) graph).getPerimeter() + ".");
-            System.out.println("The area of the rectangle is " + ((Rectangle) graph).getArea() + ".");
-        }
+        System.out.println("Learning graph: " + graph.getPerimeter() + ", " + graph.getArea());
     }
 }

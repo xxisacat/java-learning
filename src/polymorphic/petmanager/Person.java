@@ -29,11 +29,6 @@ public class Person {
     }
 
     public void keepPet(Animal animal, String something) {
-        if (animal instanceof Cat) {
-            ((Cat) animal).eat(something);
-        }
-        if (animal instanceof Dog) {
-            ((Dog) animal).eat(something);
-        }
+        animal.eat(something);
     }
 }

@@ -8,6 +8,7 @@ public class Dog extends Animal {
         super(name, color);
     }
 
+    @Override
     public void eat() {
         System.out.println(getName() + " is eating bone");
     }

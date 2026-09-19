@@ -1,18 +1,18 @@
 package polymorphic.calculategraph;
 
 public class Rectangle extends Graph {
-    private int length;
-    private int width;
+    private double length;
+    private double width;
 
     public Rectangle() {
     }
 
-    public Rectangle(int length, int width) {
+    public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
     }
 
-    public int getLength() {
+    public double getLength() {
         return length;
     }
 
@@ -20,7 +20,7 @@ public class Rectangle extends Graph {
         this.length = length;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
@@ -28,11 +28,13 @@ public class Rectangle extends Graph {
         this.width = width;
     }
 
-    public int getPerimeter() {
+    @Override
+    public double getPerimeter() {
         return 2 * (length + width);
     }
 
-    public int getArea() {
+    @Override
+    public double getArea() {
         return length * width;
     }
 }

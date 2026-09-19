@@ -45,8 +45,7 @@ public class Person {
             b.ringBell();
             b.move();
             System.out.println(this.name + " is using " + b.getBrand());
-        }
-        if (vehicle instanceof Car) {
+        } else if (vehicle instanceof Car) {
             Car c = (Car) vehicle;
             c.honk();
             c.move();

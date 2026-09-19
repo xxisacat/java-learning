@@ -1,4 +1,10 @@
 package polymorphic.calculategraph;
 
-public class Graph {
+public abstract class Graph {
+    public Graph() {
+    }
+
+    public abstract double getPerimeter();
+
+    public abstract double getArea();
 }

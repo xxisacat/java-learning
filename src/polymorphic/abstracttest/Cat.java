@@ -8,6 +8,7 @@ public class Cat extends Animal {
         super(name, color);
     }
 
+    @Override
     public void eat() {
         System.out.println(getName() + " is eating fish");
     }

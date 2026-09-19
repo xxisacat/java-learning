@@ -2,7 +2,7 @@ package polymorphic.calculategraph;
 
 public class Circle extends Graph {
     final double PI = 3.14;
-    private double r;
+    static private double r;
 
     public Circle() {
     }
@@ -23,10 +23,12 @@ public class Circle extends Graph {
         this.r = r;
     }
 
+    @Override
     public double getPerimeter() {
         return 2 * PI * r;
     }
 
+    @Override
     public double getArea() {
         return PI * r * r;
     }
