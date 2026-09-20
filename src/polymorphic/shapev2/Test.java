@@ -5,10 +5,18 @@ public class Test {
         Shape c1 = new Circle("c1", 6);
         Shape c2 = new Circle("c2", 8);
         Shape r = new Rectangle("r", 8, 6);
-        Shape t = new Triangle("t", 8, 6);
-        String[] Shape = {"c1", "c2", "r", "t"};
+        Shape t = new Triangle("t", 8, 6, 10);
+        Shape[] shape = {c1, c2, r, t};
         ShapeUtil util = new ShapeUtil();
-        util.printAll(new Shape[]{c1, c2, r, t});
+        util.printAll(shape);
+        for (int i = 0; i < shape.length; i++) {
+            if (shape[i] instanceof Triangle) {
+                Triangle triangle = (Triangle) shape[i];
+                if (triangle.isRightTriangle()) {
+                    System.out.println(triangle.getName() + " is a right triangle");
+                }
+            }
+        }
         System.out.println(Circle.getCount());
     }
 }
