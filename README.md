@@ -32,7 +32,11 @@ src/
     ├── calculategraph/      图形求面积周长（抽象父类 + 多态调用）
     ├── petmanager/          主人喂养宠物
     ├── usevehicle/          人的出行方式（子类独有方法才用 instanceof）
-    └── studentmanager/      学生 / 老师 / 管理员共用 work 重写
+    ├── studentmanager/      学生 / 老师 / 管理员共用 work 重写
+    └── shapev2/             图形系统 v2（抽象父类 + 静态计数器 + 调用方 instanceof）
+
+docs/
+└── 2026-09-19-多态练习-图形系统v2.md    多态练习：题目 + 批改记录
 ```
 
 > 进度：继承（`super` 构造器链、方法重写）和多态（向上转型、`instanceof` + 强转）已完成，抽象类已用上，接口是下一步。
