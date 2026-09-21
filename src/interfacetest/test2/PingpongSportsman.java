@@ -1,10 +1,10 @@
 package interfacetest.test2;
 
-public class Ppsportsman extends Sportsman implements Sayenglish {
-    public Ppsportsman() {
+public class PingpongSportsman extends Sportsman implements SayEnglish {
+    public PingpongSportsman() {
     }
 
-    public Ppsportsman(String name, int age) {
+    public PingpongSportsman(String name, int age) {
         super(name, age);
     }
 
@@ -14,8 +14,7 @@ public class Ppsportsman extends Sportsman implements Sayenglish {
     }
 
     @Override
-
-    public void say() {
+    public void speakEnglish() {
         System.out.println(getName() + " should say English");
     }
 }

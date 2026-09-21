@@ -1,11 +1,9 @@
 package interfacetest.test1;
 
 public class Frog extends Animal implements Swim {
-    public Frog() {
-    }
 
-    public Frog(String name, String color) {
-        super(name, color);
+    public Frog(String name) {
+        super(name);
     }
 
     @Override

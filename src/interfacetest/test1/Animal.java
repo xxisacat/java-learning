@@ -2,14 +2,9 @@ package interfacetest.test1;
 
 public abstract class Animal {
     private String name;
-    private String color;
 
-    public Animal() {
-    }
-
-    public Animal(String name, String color) {
+    public Animal(String name) {
         this.name = name;
-        this.color = color;
     }
 
     public String getName() {
@@ -18,14 +13,6 @@ public abstract class Animal {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public abstract void eat();

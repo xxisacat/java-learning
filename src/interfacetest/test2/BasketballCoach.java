@@ -1,10 +1,10 @@
 package interfacetest.test2;
 
-public class Bcoach extends Coach {
-    public Bcoach() {
+public class BasketballCoach extends Coach {
+    public BasketballCoach() {
     }
 
-    public Bcoach(String name, int age) {
+    public BasketballCoach(String name, int age) {
         super(name, age);
     }
 

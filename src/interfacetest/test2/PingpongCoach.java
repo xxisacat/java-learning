@@ -1,10 +1,10 @@
 package interfacetest.test2;
 
-public class Ppcoach extends Coach implements Sayenglish {
-    public Ppcoach() {
+public class PingpongCoach extends Coach implements SayEnglish {
+    public PingpongCoach() {
     }
 
-    public Ppcoach(String name, int age) {
+    public PingpongCoach(String name, int age) {
         super(name, age);
     }
 
@@ -14,7 +14,7 @@ public class Ppcoach extends Coach implements Sayenglish {
     }
 
     @Override
-    public void say() {
+    public void speakEnglish() {
         System.out.println(getName() + " should say English");
     }
 }

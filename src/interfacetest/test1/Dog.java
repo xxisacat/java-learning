@@ -1,11 +1,9 @@
 package interfacetest.test1;
 
 public class Dog extends Animal implements Swim {
-    public Dog() {
-    }
 
-    public Dog(String name, String color) {
-        super(name, color);
+    public Dog(String name) {
+        super(name);
     }
 
     @Override

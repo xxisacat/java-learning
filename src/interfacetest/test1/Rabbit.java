@@ -1,11 +1,9 @@
 package interfacetest.test1;
 
 public class Rabbit extends Animal {
-    public Rabbit() {
-    }
 
-    public Rabbit(String name, String color) {
-        super(name, color);
+    public Rabbit(String name) {
+        super(name);
     }
 
     @Override

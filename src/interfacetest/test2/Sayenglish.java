@@ -1,5 +1,5 @@
 package interfacetest.test2;
 
-public interface Sayenglish {
-    void say();
+public interface SayEnglish {
+    void speakEnglish();
 }

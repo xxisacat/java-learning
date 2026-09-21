@@ -2,13 +2,15 @@ package interfacetest.test1;
 
 public class Test {
     public static void main(String[] args) {
-        Dog dog = new Dog("Buddy", "Golden Retriever");
+        Dog dog = new Dog("Buddy");
         dog.eat();
-        dog.swim();
-        Frog frog = new Frog("Buddy", "Golden Retriever");
+        Frog frog = new Frog("Frogger");
         frog.eat();
-        frog.swim();
-        Rabbit rabbit = new Rabbit("Buddy", "Golden Retriever");
+        Rabbit rabbit = new Rabbit("Bunny");
         rabbit.eat();
+        Swim[] swimmers = {dog, frog};
+        for (int i = 0; i < swimmers.length; i++) {
+            swimmers[i].swim();
+        }
     }
 }
