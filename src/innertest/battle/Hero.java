@@ -3,12 +3,10 @@ package innertest.battle;
 public class Hero {
     private String name;
     private int hp;
-    private int maxHp;
 
     public Hero(String name, int hp) {
         this.name = name;
         this.hp = hp;
-        this.maxHp = hp;
     }
 
     public String getName() {
@@ -19,14 +17,15 @@ public class Hero {
         return hp;
     }
 
-    public void isAlive() {
-        if (getHp() > 0)
-            System.out.println(getName() + " is alive");
-        else
-            System.out.println(getName() + " is dead");
+    public boolean isAlive() {
+        if (getHp() > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public int takeDamage(int damage) {
-        return Math.max(getHp() - damage, 0);
+    public void takeDamage(int damage) {
+        this.hp = Math.max(this.hp - damage, 0);
     }
 }
