@@ -18,14 +18,12 @@ public class Hero {
     }
 
     public boolean isAlive() {
-        if (getHp() > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return getHp() > 0;
     }
 
-    public void takeDamage(int damage) {
+    public int takeDamage(int damage) {
+        int before = this.hp;
         this.hp = Math.max(this.hp - damage, 0);
+        return before - this.hp;
     }
 }

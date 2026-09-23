@@ -7,9 +7,9 @@ public class Arena {
             Attackable weapon = aTurn ? aWeapon : bWeapon;
             Hero defender = aTurn ? b : a;
             int damage = weapon.attack();
-            defender.takeDamage(damage);
+            int real = defender.takeDamage(damage);
             for (int i = 0; i < listeners.length; i++) {
-                listeners[i].onHit(defender.getName(), damage);
+                listeners[i].onHit(defender.getName(), real);
             }
             aTurn = !aTurn;
         }
