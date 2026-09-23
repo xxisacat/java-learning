@@ -4,6 +4,7 @@ public class Test {
     public static void main(String[] args) {
         int hp = 100;
         Fake f = new Fake(hp);
+        hp = 200;
         System.out.println("Fake     -> " + f.peek());
 
         int[] arr = {100};
