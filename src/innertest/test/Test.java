@@ -2,41 +2,18 @@ package innertest.test;
 
 public class Test {
     public static void main(String[] args) {
-        new Hero().demo();
-        int[] hp = {100};
-        Attackable a = new Attackable() {
-            @Override
-            public int attack() {
-                return 10;
-            }
-        };
+        int hp = 100;
+        Fake f = new Fake(hp);
+        System.out.println("Fake     -> " + f.peek());
 
-        Healable h = new Healable() {
-            @Override
-            public int heal(int amount) {
-                return hp[0] + amount;
-            }
-        };
-        System.out.println(h.heal(50));
-        hp[0] = 200;
-        System.out.println(h.heal(50));
+        int[] arr = {100};
+        FakeArr fa = new FakeArr(arr);
+        arr[0] = 200;
+        System.out.println("FakeArr  -> " + fa.peek());
 
-        Enemy goblin = new Enemy("哥布林") {
-            @Override
-            public void attack() {
-                System.out.println(getName() + " 挥刀");
-            }
-        };
-        goblin.attack();
-        System.out.println(goblin.getClass().getName());
-
-        Enemy slime = new Enemy("史莱姆") {
-            @Override
-            public void attack() {
-                System.out.println(getName() + " 攻击");
-            }
-        };
-        System.out.println(goblin == slime);
-        System.out.println(slime.getClass().getName());
+        int[] arr2 = {100};
+        FakeArr fb = new FakeArr(arr2);
+        arr2 = new int[]{200};
+        System.out.println("换门牌号 -> " + fb.peek());
     }
 }
