@@ -28,6 +28,6 @@ public class Outer {
     }
 
     void peek(Inner in) {
-        System.out.println(in.tag);//能进行编译，因为Inner本来就是Outer的内部类
+        System.out.println(in.tag);//能进行编译，因为inner作为成员内部类，外层也能访问内层
     }
 }

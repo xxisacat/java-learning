@@ -2,6 +2,8 @@ package innertest.battle;
 
 public class Test {
     public static void main(String[] args) {
+        int start = 5;
+        int step = 3;
         Hero hero = new Hero("hero", 100);
         Hero goblin = new Hero("goblin", 100);
         Attackable sword = new Attackable() {
@@ -11,12 +13,12 @@ public class Test {
             }
         };
         Attackable dagger = new Attackable() {
-            private int damage = 5;
-
+            private int damage = start;
+            //在start和step复制进的那一刻，后续如果在外部修改start和step就会产生分叉，因此effectively final，即看起来像是final的
             @Override
             public int attack() {
                 int current = damage;
-                damage += 3;
+                damage += step;
                 return current;
             }
         };
