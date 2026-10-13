@@ -5,5 +5,5 @@ public enum PlayerState {
     RUNNING,
     ATTACKING,
     HURT,
-    DEAD,
+    DEAD;
 }
