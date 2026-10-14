@@ -1,4 +1,4 @@
-package genericity.classvideo.loot;
+package genericity.loot;
 
 public class LootUtil {
     public static <T> int transfer(Backpack<T> from, Backpack<T> to) {

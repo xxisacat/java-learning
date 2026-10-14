@@ -1,4 +1,4 @@
-package genericity.classvideo.loot;
+package genericity.loot;
 
 public class Test {
     public static void main(String[] args) {
@@ -28,9 +28,12 @@ public class Test {
         System.out.println(" 背包仍有：" + bag.size() + "件");
         System.out.println("---同一个类,另一种类型---");
         Backpack<String> materials = new Backpack<>(2);
+        Backpack<String> materials1 = new Backpack<>(2);
         materials.add("铁矿石");
         materials.add("魔金");
         System.out.println("仓库中物品数量为：" + materials.size() + " 分别是" + materials.get(0) + "和" + materials.get(1));
         System.out.println("装入 兽皮 ->" + materials.add("兽皮"));
+        LootUtil.transfer(materials, materials1);
+        System.out.println("搬运后：源背包" + materials.size() + "件/目标背包" + materials1.size() + "件");
     }
 }

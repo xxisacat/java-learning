@@ -1,4 +1,4 @@
-package genericity.classvideo.loot;
+package genericity.loot;
 
 public class Weapon {
     private String name;

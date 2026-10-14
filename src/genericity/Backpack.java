@@ -1,6 +1,7 @@
-package genericity.classvideo.loot;
+package genericity;
 
 public class Backpack<T> {
+    //重写的最小泛型类,日期：2026.10.15
     private T[] items;
     private int size;
 
@@ -10,9 +11,6 @@ public class Backpack<T> {
     }
 
     public boolean add(T item) {
-        if (isFull()) {
-            return false;
-        }
         items[size] = item;
         size++;
         return true;
@@ -22,22 +20,7 @@ public class Backpack<T> {
         return items[index];
     }
 
-    public T removeLast() {
-        size--;
-        return items[size];
-    }
-
     public int size() {
         return size;
     }
-
-    public boolean isFull() {
-        return size == items.length;
-    }
-
-    public int capacity() {
-        return items.length;
-    }
 }
-
-
